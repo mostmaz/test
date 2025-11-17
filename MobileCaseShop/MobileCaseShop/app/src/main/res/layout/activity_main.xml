@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- App Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Case Shop"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Brand Selection Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Your Phone"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Brand Spinner -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brand:"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="4dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerBrand"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:padding="8dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Model Spinner -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Model:"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="4dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:padding="8dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Cart Button -->
+        <Button
+            android:id="@+id/btnViewCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Cart (0)"
+            android:textSize="16sp"
+            android:backgroundTint="#FF6B35"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"/>
+
+        <!-- Top Sold Cases Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Sold Cases"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerTopSold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"/>
+
+        <!-- Latest Products Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latest Products"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerLatest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+</ScrollView>
