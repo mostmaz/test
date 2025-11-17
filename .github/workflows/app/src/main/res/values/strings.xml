@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mobile Case Shop</string>
+    <string name="select_brand">Select Brand</string>
+    <string name="select_model">Select Model</string>
+    <string name="select_governorate">Select Governorate</string>
+    
+    <!-- Iraqi Governorates -->
+    <string-array name="iraq_governorates">
+        <item>Select Governorate</item>
+        <item>Al-Anbar (الأنبار)</item>
+        <item>Babil (بابل)</item>
+        <item>Baghdad (بغداد)</item>
+        <item>Basra (البصرة)</item>
+        <item>Dhi Qar (ذي قار)</item>
+        <item>Diyala (ديالى)</item>
+        <item>Duhok (دهوك)</item>
+        <item>Erbil (أربيل)</item>
+        <item>Halabja (حلبجة)</item>
+        <item>Karbala (كربلاء)</item>
+        <item>Kirkuk (كركوك)</item>
+        <item>Maysan (ميسان)</item>
+        <item>Muthanna (المثنى)</item>
+        <item>Najaf (النجف)</item>
+        <item>Nineveh (نينوى)</item>
+        <item>Al-Qādisiyyah (القادسية)</item>
+        <item>Saladin (صلاح الدين)</item>
+        <item>Sulaymaniyah (السليمانية)</item>
+        <item>Wasit (واسط)</item>
+    </string-array>
+</resources>
